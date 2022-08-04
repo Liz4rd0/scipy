@@ -176,6 +176,7 @@ def compareNumberOfDeathsPerDisease(todesursache):
     plt.show()
 
 def InteractiveAgePlot(altersgruppe):
+    """Interactive Plot to display the difference before covid and after covid onset in the diferent age groups"""
     global data_for_later
     
     stat =pd.read_csv("ds.csv", encoding = 'cp1252', sep = ";", header = 7)
@@ -209,6 +210,7 @@ def InteractiveAgePlot(altersgruppe):
     plt.show()
 
 if __name__ == "__main__":
+    
     stat =pd.read_csv("data/ds.csv", encoding = 'cp1252', sep = ";", header = 7)
     stat_cleaned = clean_data(stat)
     overviewPlot(stat_cleaned)
