@@ -1,6 +1,8 @@
 # Death Statistics in Germany
 ## Project by Nicole Rogalla and Lisa Artmann
 
+> The detailed functionality and interpretation of the project is explained in the Jupyter notebook
+
 ## Goal
 The goal of our project is to analyze the death statistics in Germany with respect to Covid-19, specifically the effect on the total number of deaths, other causes of death, life expectancy and demographics. 
 
@@ -20,4 +22,6 @@ The goal of our project is to analyze the death statistics in Germany with respe
 numpy, panda, matplotlib, SciPy, seaborn
 
 ## Resources
-
+- https://www-genesis.destatis.de/genesis/online?operation=abruftabelleBearbeiten&levelindex=1&levelid=1659649214846&auswahloperation=abruftabelleAuspraegungAuswaehlen&auswahlverzeichnis=ordnungsstruktur&auswahlziel=werteabruf&code=12621-0002&auswahltext=&werteabruf=Werteabruf#abreadcrumb
+- https://www-genesis.destatis.de/genesis//online?operation=table&code=23211-0004&bypass=true&levelindex=0&levelid=1659649356469#abreadcrumb
+- https://www-genesis.destatis.de/genesis/online?sequenz=tabelleErgebnis&selectionname=12411-0005#abreadcrumb
