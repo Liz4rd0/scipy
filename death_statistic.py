@@ -1,9 +1,7 @@
+#%%
 from os import stat
 import pandas as pd
-import io
-import codecs
 import numpy as np
-import matplotlib as mpl
 from matplotlib import pyplot as plt
 import seaborn as sns
 import ipywidgets as widgets
@@ -148,7 +146,7 @@ def compareNmberOfDeathsPerAgegroup(stat_cleaned):
 
 def compareNumberOfDeathsPerDisease(todesursache):
     """Plots the mean of deaths per cause before and after covid started"""
-    stat = pd.read_csv("ds.csv", encoding = 'cp1252', sep = ";", header = 7)
+    stat = pd.read_csv("data/ds.csv", encoding = 'cp1252', sep = ";", header = 7)
     stat_cleaned = clean_data(stat)
     
     stat_cleaned = stat_cleaned[stat_cleaned['Todesursachen'] == todesursache]
@@ -179,7 +177,7 @@ def InteractiveAgePlot(altersgruppe):
     """Interactive Plot to display the difference before covid and after covid onset in the diferent age groups"""
     global data_for_later
     
-    stat =pd.read_csv("ds.csv", encoding = 'cp1252', sep = ";", header = 7)
+    stat =pd.read_csv("data/ds.csv", encoding = 'cp1252', sep = ";", header = 7)
     stat_cleaned = clean_data(stat)
     
     # exclude Covid
@@ -220,7 +218,8 @@ if __name__ == "__main__":
     a = stat_cleaned.groupby("Todesursachen")["value"].sum().reset_index()["Todesursachen"]
     drop = widgets.Dropdown(options = a)
     widgets.interact(compareNumberOfDeathsPerDisease, todesursache = drop)
-
+  
     a = stat_cleaned.groupby("Altersgruppe")["value"].sum().reset_index()["Altersgruppe"]
     drop = widgets.Dropdown(options = a)
     widgets.interact(InteractiveAgePlot, altersgruppe = drop)
+
