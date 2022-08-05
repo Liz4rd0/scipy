@@ -12,6 +12,7 @@ warnings.filterwarnings('ignore')
 
 
 def life_expectancy(sterberate):
+    """creates a plot of the life expectancy"""
     sterberate = sterberate[:202]
     sterberate = sterberate.rename(columns = {"Unnamed: 0" : "Geschlecht", "Unnamed: 1" : "Alter"})
 
