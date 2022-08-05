@@ -23,8 +23,9 @@ numpy, pandas, matplotlib, SciPy, seaborn, ipywidgets
 
 ## Prerequisits and Instructions
 - All the above mentioned libraries must be installed
-- execute the files death_statistics.py, life_expectancy.py and demographics.py
-  - OR run the jupyter notebook
+- click on run cell in the death_statistic.py file in visual code
+- execute the life_expectancy.py and demographics.py
+- OR run the jupyter notebook
 
 
 ## Resources
