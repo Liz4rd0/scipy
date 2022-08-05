@@ -28,6 +28,6 @@ numpy, pandas, matplotlib, SciPy, seaborn, ipywidgets
 
 
 ## Resources
-- https://www-genesis.destatis.de/genesis/online?operation=abruftabelleBearbeiten&levelindex=1&levelid=1659649214846&auswahloperation=abruftabelleAuspraegungAuswaehlen&auswahlverzeichnis=ordnungsstruktur&auswahlziel=werteabruf&code=12621-0002&auswahltext=&werteabruf=Werteabruf#abreadcrumb
-- https://www-genesis.destatis.de/genesis//online?operation=table&code=23211-0004&bypass=true&levelindex=0&levelid=1659649356469#abreadcrumb
-- https://www-genesis.destatis.de/genesis/online?sequenz=tabelleErgebnis&selectionname=12411-0005#abreadcrumb
+Statistisches Bundesamt. (2021). Gestorbene: Deutschland, Jahre, Todesursachen, Geschlecht, Altersgruppen. (23211-0004). [Data set]. https://www-genesis.destatis.de/genesis/online?operation=find&suchanweisung_language=de&query=lebenserwartung#abreadcrumb
+Statistisches Bundesamt. (2022). Durchschnittliche Lebenserwartung (Periodensterbetafel): Deutschland, Jahre, Geschlecht, Vollendetes Alter. (12621-0002). [Data set]. https://www-genesis.destatis.de/genesis//online?operation=table&code=12621-0002&bypass=true&levelindex=0&levelid=1659649201416#abreadcrumb
+Statistisches Bundesamt. (2022). Bevölkerung: Deutschland, Stichtag, Altersjahre. (12411-0005). [Data set]. https://www-genesis.destatis.de/genesis//online?operation=table&code=12411-0005&bypass=true&levelindex=0&levelid=1659705608317#abreadcrumb
