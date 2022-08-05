@@ -19,7 +19,12 @@ The goal of our project is to analyze the death statistics in Germany with respe
   - plot demographics
 
 ## Libraries
-numpy, panda, matplotlib, SciPy, seaborn
+numpy, panda, matplotlib, SciPy, seaborn, ipywidgets
+
+## Prerequisits and Instructions
+- All the above mentioned libraries must be installed
+- execute the files death_statistics.py, life_expectancy.py and demographics.py
+
 
 ## Resources
 - https://www-genesis.destatis.de/genesis/online?operation=abruftabelleBearbeiten&levelindex=1&levelid=1659649214846&auswahloperation=abruftabelleAuspraegungAuswaehlen&auswahlverzeichnis=ordnungsstruktur&auswahlziel=werteabruf&code=12621-0002&auswahltext=&werteabruf=Werteabruf#abreadcrumb
