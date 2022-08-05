@@ -7,7 +7,7 @@ import death_statistic
 warnings.filterwarnings('ignore')
 
 def clean_data2(population):
-
+    """Function for cleaning the population dataset"""
     # calculate difference between 2020 and 2019 and the mean between 2019 and 2017
     population["difference2020-2019"] = population["31.12.2020"] - population["31.12.2019"]
     population["difference2019-2017"] = (population["31.12.2019"] - population["31.12.2018"] + population["31.12.2018"] - population["31.12.2017"])/2 
@@ -47,6 +47,7 @@ def clean_data2(population):
 
 
 def plot(population):
+    """shows a plot of the demographic change"""
     f = plt.figure()
     f.set_figwidth(20)
     f.set_figheight(10)
@@ -57,6 +58,7 @@ def plot(population):
     plt.show()
 
 def plot_difference(population, stat_cleaned):
+    """shows a plot of the demographic change between 2019 and 2020"""
     group_pop = population.groupby(['Altersgruppe', 'variable'])['value'].sum().reset_index()
     stat_cleaned = stat_cleaned[(stat_cleaned["Todesursachen"].str.contains("COVID")) == False]
 
